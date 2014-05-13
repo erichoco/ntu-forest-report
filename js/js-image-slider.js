@@ -35,8 +35,8 @@ var sliderOptions5=clone(sliderOptions1);
 sliderOptions5.sliderId="slider5";
 var sliderOptions6=clone(sliderOptions1);
 sliderOptions6.sliderId="slider6";
-sliderOptions6.pauseTime=200;
-sliderOptions6.transitionTime=50;
+sliderOptions6.pauseTime=100;
+sliderOptions6.transitionTime=30;
 
 var imageSlider1=new mcImgSlider(sliderOptions1);
 var imageSlider2=new mcImgSlider(sliderOptions2);

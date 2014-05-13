@@ -14,7 +14,7 @@
 
 	body
 	{
-		background: #183026 url('../images/bg.jpg') no-repeat;
+		background: #183026 url('../images/bg-3.png') no-repeat;
 		background-size: cover;
 		background-position: center 0;
 		background-attachment: fixed;
@@ -22,7 +22,7 @@
 
 	body,input,textarea,select
 	{
-		font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;
 		font-weight: 300;
@@ -1139,7 +1139,7 @@
 			#header header h1
 			{
 				font-weight: 600;
-				font-size: 2em;
+				font-size: 3em;
 				letter-spacing: 10px;
 			}
 
@@ -1337,7 +1337,8 @@
         text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
         text-align: center;
         /*background: #35b88f url('images/banner.svg') bottom center no-repeat;*/
-        background: transparent url('../images/banner3-bg.jpg') bottom center no-repeat;
+        /*background: transparent url('../images/banner3-bg.jpg') bottom center no-repeat;*/
+        background-color: transparent;
         padding: 5em 0 5em 0;
         margin: 100px 0;
         background-size: 125% auto;
@@ -1363,7 +1364,10 @@
 
             #banner3 header h1
             {
-                font-size: 3em;
+                font-size: 5em;
+                /*text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.8);*/
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                color: #ffe54d;
             }
 
         #banner3 p
@@ -1387,12 +1391,33 @@
                 border-bottom-color: rgba(255,255,255,0);
             }
 
+/*    .rainbow {
+          background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.1, #f2f), color-stop(0.2, #22f), color-stop(0.3, #2ff), color-stop(0.4, #2f2),color-stop(0.5, #2f2), color-stop(0.6, #ff2), color-stop(0.7, #f22) );
+          background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.1, #f2f), color-stop(0.2, #22f), color-stop(0.3, #2ff), color-stop(0.4, #2f2),color-stop(0.5, #2f2), color-stop(0.6, #ff2), color-stop(0.7, #f22) );
+          color:transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }*/
+
 /***********/
 /* Article */
 /***********/
 
     article.box.style1 {
         padding: 1.5em;
+    }
+    article.style1 h4,
+    article.style2 h4,
+    article.style3 h4 {
+        font-style: italic;
+        color: #888888;
+        opacity: 0.6;
+    }
+    article.style1 h2, h1 {
+        font-weight: bold;
+    }
+    article.style2 h2, h1 {
+        font-weight: bold;
     }
     article .inner p {
         font-size: 0.8em;
@@ -1425,6 +1450,50 @@
     }
     article img {
         width: 300px;
+    }
+    article span.roll {
+        color: #8b613d;
+        display: block;
+        position: relative;
+        padding: 0 2px;
+        pointer-events: none;
+        -webkit-transition: all 400ms ease;
+        -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+        transition: all 400ms ease;
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    article p:hover span.roll {
+        color: #ffc600;
+    }
+    article.style3.ending {
+        background: transparent url('../images/banner3-bg.jpg') bottom center no-repeat;
+    }
+    article.style3.ending h4 {
+        color: #cdcdcd;
+        opacity: 1;
+        line-height: 2em;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    article.style3.ending h1, article.style3.ending h2 {
+        color: #ffffff;
+        font-size: 2em;
+        line-height: 2em;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    article.style3.ending h1 {
+        font-size: 2.5em;
+        line-height: 2.5em;
     }
 
 
