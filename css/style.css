@@ -1496,6 +1496,11 @@
         line-height: 2.5em;
     }
 
+    strong.teacher {
+        font-size: inherit;
+        font-weight: inherit;
+        text-shadow: 0 0 2px #e4ffc4;
+    }
 
 /*********************************************************************************/
 /* Footer                                                                        */
